@@ -16,13 +16,13 @@ function App() {
   ];
 
   // What is that???
-  const hardCodedURL = "https://www.idlememe.com/wp-content/uploads/2022/04/wtf-meme-idlememe-14.jpg";
+  const hardcodedURL = "https://www.idlememe.com/wp-content/uploads/2022/04/wtf-meme-idlememe-14.jpg";
 
   const drop = async (e: DropEvent) => {
     const { x, y, target } = e;
 
     if (target instanceof HTMLImageElement) {
-      const image = await board.createImage({ x: 0, y: 300, url: hardCodedURL });
+      const image = await board.createImage({ x: 0, y: 300, url: hardcodedURL });
       await board.viewport.zoomTo(stickyNote);
     }
   };
